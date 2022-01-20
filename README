@@ -1,0 +1,12 @@
+# Créer un environmment
+
+conda create --name my-environment
+
+# Exporter un environnement
+
+conda env export > environment.yml
+pip freeze > requirements.txt
+
+# Importer un environnement
+
+conda env create -f environment.yml
